@@ -1,12 +1,12 @@
-.TenziesCard-container{
-  width:400px;
+.TenziesCard-container {
+  width: 400px;
   height: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.TenziesContainer{
+.TenziesContainer {
   border: solid black;
   height: 450px;
   width: 40%;
@@ -14,29 +14,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.App{
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
- 
 }
 
-.TenziesNumbers{
-  border:solid black;
-width: 70px;
-height:70px;
-display:flex;
-justify-content: center;
-align-items: center;
-font-size: x-large;
-cursor:pointer;
-
-
+.TenziesNumbers {
+  border: solid black;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  cursor: pointer;
 }
-.TenziesNumbers:hover{
+.TenziesNumbers:hover {
+  background-color: aquamarine;
+  color: white;
+}
+.Highlighted {
   background-color: blueviolet;
   color: white;
+  border: solid black;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  cursor: pointer;
 }

@@ -19,7 +19,19 @@ export const TenziesList = () => {
   ]);
 
   const handleClick = () => {
-    setTest((prev) => prev + 1);
+    setNumberList([
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+      Math.floor(Math.random() * 6 + 1),
+    ]);
+    console.log(numberList);
   };
   console.log(numberList);
   console.log(test);
