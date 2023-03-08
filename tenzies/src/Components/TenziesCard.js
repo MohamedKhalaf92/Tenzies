@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 
-export const TenziesCard = () => {
+export const TenziesCard = ({ number }) => {
   return (
-    <div>TenziesCard</div>
-  )
-}
+   
+    <div className="TenziesNumbers">{number}</div>
+  );
+};
