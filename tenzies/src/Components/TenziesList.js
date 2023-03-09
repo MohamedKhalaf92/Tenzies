@@ -19,7 +19,7 @@ export const TenziesList = () => {
     Math.floor(Math.random() * 6 + 1),
     Math.floor(Math.random() * 6 + 1),
   ]);
-
+  let updated = [...selectedCards]
   const handleClick = () => {
     setNumberList([
       Math.floor(Math.random() * 6 + 1),
@@ -37,14 +37,14 @@ export const TenziesList = () => {
   };
   console.log(numberList);
   console.log(selectedCards);
-  console.log(currentCard);
+  console.log(updated);
   return (
     <div className="TenziesContainer">
       <h1>Tenzies</h1>
       <h3>Roll Dice</h3>
       <div className="TenziesCard-container">
         {numberList.map((number,index) => {
-          return <TenziesCard number={number} selectedCards={selectedCards} setSelectedCards={setSelectedCards} index={index} currentCard={currentCard} setCurrentCard={setCurrentCard}/>;
+          return <TenziesCard number={number} selectedCards={selectedCards} setSelectedCards={setSelectedCards} index={index} currentCard={currentCard} setCurrentCard={setCurrentCard} updated={updated}/>;
         })}
       </div>
       <button onClick={handleClick}>Roll Dice</button>
